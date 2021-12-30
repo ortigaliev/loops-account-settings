@@ -32,6 +32,11 @@
 --bg-color: rgb(47, 47, 47);
 --yellow-bg: rgb(253, 236, 81);
 --text-color: #333;
+--header-color: #000;
+--label-color: rgb(171, 176, 183);
+--input-color: rgb(117, 117, 117);
+--bottom-button-color: rgb(111, 106, 63);
+
 }
 
 /* GLOBAL STYLES */
@@ -59,6 +64,7 @@ body{
   font-family: "Roboto", "Arial", sans-serif;
   background-color: var(--bg-color);
   color: var(--text-color);
+
 }
 
 img{
@@ -80,4 +86,149 @@ img{
 /* MAIN CONTENT */
 .main-content{
   flex-grow: 1;
+}
+
+.section{
+  position: relative;
+  width: 100%;
+  max-width: 505px;
+  padding: 60px;
+  padding-bottom: 20px;
+  margin: 100px auto;
+  background-color: var(--yellow-bg);
+}
+
+.account-card {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-bottom: 60px;
+}
+
+.account-header {
+  margin: 0;
+  padding: 0;
+  font-family: "Robot" sans-serif;
+  font-size: 24px;
+  line-height: 20px;
+  font-weight: 700;
+}
+
+.account-leave-icon{
+display: block;
+object-fit: cover;
+margin-left: auto;
+width: 15px;
+height: 15px;
+opacity: 0.6;
+cursor: pointer;
+}
+
+.account-leave-icon:hover{
+  opacity: 1;
+}
+
+/* FORM */
+.setting-form-wrapper {
+  position: relative;
+  z-index: 1;
+  width: 500px;
+  padding: 55px 35px;
+  background-color: #fff;
+  box-shadow: -5px 5px 5px rgb(138, 136, 136);
+}
+.setting-form {
+}
+.username-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 10px;
+}
+.username-label {
+
+}
+.username-input {
+  border: none;
+  padding: 5px;
+  padding-left: 0;
+  border-bottom: 1px solid #555;
+  outline: none;
+
+}
+
+.form-input{
+  padding: 5px;
+  padding-left: 0;
+  margin: 0;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #555;
+}
+
+.form-label{
+  padding-bottom: 5px;
+  font-size: 16px;
+  font-family: "Robot" sans-serif;
+  line-height: 1.5;
+  text-transform: uppercase;
+  color: var(--label-color);
+}
+.user-fullname-wrapper {
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
+}
+.user-fullname-label-input {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+.first-name-label {
+  padding: 0;
+  margin: 0;
+
+}
+
+.email-label-input {
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+}
+
+.textarea {
+  padding-top: 10px;
+}
+
+/* BOTTOM BUTTON */
+.bottom-buttons {
+  display: flex;
+
+  padding-top: 30px;
+}
+.cancel-button {
+  margin-left: auto;
+  margin-right: 40px;
+}
+.btn {
+  border: none;
+  background-color: transparent;
+  color: var(--bottom-button-color);
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  font-weight: 600;
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+.btn:hover{
+  opacity: 1;
+}
+
+.user-img {
+  position: absolute;
+  top: 106px;
+  left: 104px;
+  border-radius: 50%;
+  z-index: 3;
 }

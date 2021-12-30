@@ -17,8 +17,41 @@
 <div class="section">
   <div class="account-card">
     <h1 class="account-header">Account setting</h1>
-    <img src="img/leave.svg" alt="leave" widht="30" height="30">
+    <img class="account-leave-icon" src="img/leave.svg" alt="leave" widht="30" height="30">
   </div>
+  <div class="setting-form-wrapper">
+    <form class="setting-form" action="https://echo.htmlacademy.ru" method="Post">
+      <div class="username-wrapper">
+        <label class="username-label form-label">Username</label>
+        <input class="username-input form-input" type="text" name="username" placeholder="Enter your username">
+      </div>
+      <div class="user-fullname-wrapper">
+        <div class="user-fullname-label-input">
+          <label class="first-name-label form-label">First name</label>
+          <input class="first-name form-input" type="text" name="first-name" placeholder="Enter your first name">
+        </div>
+        <div class="user-last-name-label-input">
+          <label class="last-name-label form-label">Last name</label>
+          <input class="last-name form-input" type="text" name="last-name" placeholder="Enter your last name">
+        </div>
+      </div>
+      <div class="email-label-input">
+        <label class="form-label" for="email" >Email</label>
+        <input class="form-input" class="email"  type="text" name="email" placeholder="Enter your email">
+      </div>
+      <div class="textarea wrapper">
+        <div class="textarea-label-wrapper form-label"><label class="form-label">bio</label></div>
+        <textarea class="textarea form-input" name="textarea" id="textarea" cols="51" rows="5" placeholder="Tell us about yourself"></textarea>
+      </div>
+    </form>
+  </div>
+
+  <img src="/img/avatar.jpg" alt="User-img" class="user-img" width="70" height="70">
+
+    <div class="bottom-buttons">
+      <button class="cancel-button btn" type="button">Cancel</button>
+      <button class="save-button btn" type="button">Save</button>
+    </div>
 
 </div>
 
